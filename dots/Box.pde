@@ -1,15 +1,17 @@
 class Box{
   int x,y, size, csize;
   boolean[] ons;
+  boolean[] selectedVertex;
   Box(int x0, int y0, int size0){
     csize = 10;
     x = x0;
     y = y0;
     size = size0;
     ons = new boolean[4];
-    
+    selectedVertex = new boolean[4];
     for (int i = 0; i<ons.length; i++){
       ons[i] = true;
+      selectexVertex[i] = false;
     }
   }
   
